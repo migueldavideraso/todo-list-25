@@ -1,0 +1,61 @@
+
+.page > header h2 {
+  margin: 0px;
+  text-align: center;
+}
+
+.page > form {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+}
+
+.page > form input {
+  flex: auto;
+}
+
+.page > form button {
+  margin-left: auto;
+}
+
+.page select#filterType {
+  margin: 0px auto;
+}
+
+.page .todos-grid {
+  flex-direction: column;
+  overflow: auto;
+  display: flex;
+  flex: auto;
+  gap: 10px;
+  padding: 0px 10px 10px;
+}
+
+.page .todos-grid .todo {
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 5px 10px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, .7);
+  box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, .2);
+}
+
+.page .todos-grid .todo.completed {
+  box-shadow: none;
+  opacity: .7;
+  margin: 0px 10px;
+}
+
+.page .todos-grid .todo .title {
+  flex: auto;
+  width: 100%;
+}
+
+.page > footer {
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+}
