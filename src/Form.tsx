@@ -21,7 +21,7 @@ function Form() {
   }
 
   return (
-    <form action="submit" onSubmit={handleSubmit}>
+    <form action="submit" role="new-todo-form" onSubmit={handleSubmit}>
       <input type="text" placeholder="New Todo" />
       <button>Create</button>
     </form>

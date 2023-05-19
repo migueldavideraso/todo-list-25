@@ -7,7 +7,7 @@ function Footer () {
   const completedTodos = useFilteredTodosStore(state => state.completed.length)
 
   return (
-    <footer>
+    <footer role="todos-info">
       <span>Actives: {activeTodos}</span>
       <span>|</span>
       <span>Completed: {completedTodos}</span>

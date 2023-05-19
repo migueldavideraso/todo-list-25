@@ -27,16 +27,16 @@ function Todos () {
 
   return (
     <>
-      <select id="filterType" onChange={e => handleSetFilterType(e.target.value as TFilterType)}>
+      <select id="filterType" role="select-by-completed-status" onChange={e => handleSetFilterType(e.target.value as TFilterType)}>
         <option value="all">All</option>
         <option value="actives">Actives</option>
         <option value="completed">Completed</option>
       </select>
 
-      <main className="todos-grid">
+      <main className="todos-grid" role='todos-grid'>
         {todos.map(todo => 
-          <article className={`todo ${todo.completed ? 'completed' : ''}`} key={todo.name}>
-            <span className='title'>{todo.name}</span>
+          <article role="todo" className={`todo ${todo.completed ? 'completed' : ''}`} key={todo.name}>
+            <span role="todo-name" className='title'>{todo.name}</span>
             <button onClick={() => handleToogleCompleteTodo(todo.name)}>{todo.completed ? 'Activate' : 'Complete'}</button>
             <button onClick={() => handleDeleteTodo(todo.name)}>Delete</button>
           </article>  
